@@ -37,9 +37,9 @@ node {
 			
 	      echo "Docker Image Tag Name: ${dockerImageTag}"
 		  
-		  sh "docker stop pracainzynierka"
+		//   sh "docker stop pracainzynierka"
 		  
-		  sh "docker rm pracainzynierka"
+		//   sh "docker rm pracainzynierka"
 		  
 		  sh "docker run pracainzynierka:${env.BUILD_NUMBER} -p 2222:2222 "
 		  
