@@ -19,6 +19,7 @@ node {
 	    }    
 	  
 	    stage('Build Project') {
+            sh "pwd"
 	      // build project via maven
 	      sh "'${mvnHome}/bin/mvn' clean install"
 	    }
