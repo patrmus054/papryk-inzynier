@@ -19,7 +19,7 @@ node {
 	    }    
 	  
 	    stage('Build Project') {
-            sh "cd gs-rest-service"
+            sh "cd gs-rest-service/initial"
 	      // build project via maven
 	      sh "'${mvnHome}/bin/mvn' clean install"
 	    }
