@@ -10,6 +10,7 @@ node {
 	    def dockerImageTag = "pracainzynierka${env.BUILD_NUMBER}"
 
 		def DOCKER_FILES_DIR = "./initial"
+		def dockerfile = "Dockerfile"
 	    
 	    stage('Clone Repo') { // for display purposes
 	      // Get some code from a GitHub repository
@@ -27,7 +28,7 @@ node {
 			
 	    stage('Build Docker Image') {
 	      // build docker image
-	      dockerImage = docker.build("./initial/pracainzynierka:${env.BUILD_NUMBER}")
+	      dockerImage = docker.build("pracainzynierka:${env.BUILD_NUMBER}", "-f ${DOCKER_FILES_DIR}/${dockerfile} ${DOCKER_FILES_DIR}")
 	    }
 	   
 	    stage('Deploy Docker Image'){
