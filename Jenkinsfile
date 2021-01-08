@@ -8,6 +8,8 @@ node {
 	    // ip address of the docker private repository(nexus)
 	 
 	    def dockerImageTag = "pracainzynierka${env.BUILD_NUMBER}"
+
+		def DOCKER_FILES_DIR = "./initial"
 	    
 	    stage('Clone Repo') { // for display purposes
 	      // Get some code from a GitHub repository
@@ -25,7 +27,7 @@ node {
 			
 	    stage('Build Docker Image') {
 	      // build docker image
-	      dockerImage = docker.build("pracainzynierka:${env.BUILD_NUMBER}")
+	      dockerImage = docker.build("pracainzynierka:${env.BUILD_NUMBER}", "-f ${dockerfile} ${DOCKER_FILES_DIR}")
 	    }
 	   
 	    stage('Deploy Docker Image'){
@@ -38,7 +40,7 @@ node {
 		  
 		  sh "docker rm pracainzynierka"
 		  
-		  sh "docker run --name pracainzynierka -d -p 2222:2222 pracainzynierka:${env.BUILD_NUMBER}"
+		  sh "docker run pracainzynierka:${env.BUILD_NUMBER} -p 2222:2222 "
 		  
 		  // docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
 	      //    dockerImage.push("${env.BUILD_NUMBER}")
