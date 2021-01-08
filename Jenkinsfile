@@ -27,7 +27,7 @@ node {
 			
 	    stage('Build Docker Image') {
 	      // build docker image
-	      dockerImage = docker.build("pracainzynierka:${env.BUILD_NUMBER}", "-f ${DOCKER_FILES_DIR}/${dockerfile} ${DOCKER_FILES_DIR}")
+	      dockerImage = docker.build("pracainzynierka:${env.BUILD_NUMBER}", "-f ${DOCKER_FILES_DIR}")
 	    }
 	   
 	    stage('Deploy Docker Image'){
