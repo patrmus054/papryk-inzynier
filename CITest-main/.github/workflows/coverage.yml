@@ -1,0 +1,28 @@
+name: coverage testing
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  runtests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.1
+        with: 
+          python-version: 3.8 
+      - name: Generate coverage report
+        run: |
+          pip install pytest
+          pip install pytest-cov
+          coverage run test_code.py
+          coverage report
+          coverage xml
+      - name: Upload  to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          flags: unittests
