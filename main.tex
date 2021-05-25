@@ -1,0 +1,114 @@
+\documentclass[twoside]{projektInzynierskiMS1}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{url}
+
+% kolorowanie javascriptu:
+
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, let, const, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{white},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+
+% koniec kolorownia javascriptu:
+
+\graphicspath{ {./images/} }
+%\drukJednostronny
+
+%% tytuł promotor iautor (\title to komenda standardowa)
+\title{Automatyzacja procesów w przemyśle IT}
+\promotor{dr inż. Zdzisław Sroczyński}
+
+
+%% każdy autor musi mieć 3 argumenty: imię nazwisko, nr albumu, opis wkładu
+\autor{Artur Kasperek}{1234}
+\autor{Michał Płonka}{1234}
+\autor{Patryk Musiol}{1234}
+
+%% dedykacja mile widziana
+% \dedykacja{To jest\\dedykacja}
+%\NumeryNaPoczatku
+%% numeracja wzorów tu włączona typu (1.2.3), ta druga to typu (1.2), domyślnie typu (1)
+%\subsectionWzory
+% \sectionWzory
+
+%\rozdzialy
+
+
+%\literowaNumeracjaDodatkow %% włączy numerację dodatków literami
+%\rzymskaNumeracjaDodatkow  %%włączy numerację dodatków liczbami rzymskimi
+
+%% wyłączenie wyjaśnień:
+\bezWyjasnien
+
+%% standardowe komendy \newtheorem  działają jak woryginale
+\newtheorem{tw}{Twierdzenie}%[subsection]
+\newtheorem{twa}{Twierdzenie}%[section]
+\newtheorem{dd}{Definicja}%[subsection]
+
+\begin{document}
+TODO dodać wstęp
+
+
+\input{rozdzialy/wstep.tex}
+\input{rozdzialy/wirtualizacja-orkiestracja.tex}
+\input{rozdzialy/jenkins.tex}
+\input{rozdzialy/saas-ci-cd.tex}
+\input{rozdzialy/testy-ci.tex}
+\input{rozdzialy/podsumowanie.tex}
+
+\begin{thebibliography}{12}
+
+\bibitem{AgileManifesto} Kent Beck; James Grenning; Robert C. Martin; Mike Beedle; Jim Highsmith; Steve Mellor; Arie van Bennekum; Andrew Hunt; Ken Schwaber; Alistair Cockburn; Ron Jeffries; Jeff Sutherland; Ward Cunningham; Jon Kern; Dave Thomas; Martin Fowler; Brian Marick (2001). "Principles behind the Agile Manifesto"
+\bibitem{DevOpsBook} Bass, Len; Weber, Ingo; Zhu, Liming (2015). DevOps: A Software Architect's Perspective
+\bibitem{TravisCI} Mathias Meyer (2015)  "How We Improved the Installation and Update Experience for Travis CI Enterprise" \url{https://blog.travis-ci.com/2015-06-19-how-we-improved-travis-ci-installation/}
+\bibitem{UnitOpinions} kayis (2018)"What are the alternatives to unit tests?" \url{https://dev.to/kayis/what-are-the-alternatives-to-unit-tests-2jii}
+\bibitem{UnitResults} kayis (2018) "The Dev.to-Community's Opinion about Unit-Tests" \url{https://dev.to/kayis/the-devtos-opinion-about-unit-tests-1md2}
+\bibitem{UnitDefinition} Roy Osherove (2011) "Unit Test - Definition" \url{https://www.artofunittesting.com/definition-of-a-unit-test/}
+\bibitem{TestDrivenDevelopment} Kent Beck (2002). "Test Driven Development: By Example"
+\bibitem{BehaviourDrivenDevelopment} Dan North (marzec 2006). Magazyn "Better Software" \url{https://dannorth.net/introducing-bdd/}
+\bibitem{RegressionTesting} GURU99, "What is Regression Testing? Definition, Test Cases (Example)" \url{https://www.guru99.com/regression-testing.html}
+\bibitem{GitLabTesting} GitLab, Dokumentacja "Testing levels" \url{https://docs.gitlab.com/ee/development/testing\_guide/testing\_levels.html}
+\bibitem{TravisCI} Mathias Meyer (2015)  "How We Improved the Installation and Update Experience for Travis CI Enterprise" https://blog.travis-ci.com/2015-06-19-how-we-improved-travis-ci-installation/
+\bibitem{GatsbyJSWordpress} Praca zbiorcza twórców GatsbyJS "Sourcing from WordPress" https://www.gatsbyjs.com/docs/sourcing-from-wordpress/
+\bibitem{GithubActionsDoc} Autor nieznany "GitHub Actions Reference" https://docs.github.com/en/free-pro-team@latest/actions/reference
+\bibitem{Computing} Paul E. Ceruzzi "A History of Modern Computing"
+\bibitem{Computer Systems} Randal Bryant "Computer Systems: A Programmer's Perspective"
+\bibitem{Docker} James Turnbull "The Docker Book: Containerization Is the New Virtualization"
+\bibitem{PragmaticProgrammer} Andrew Hunt, David Thomas "The Pragmatic Programmer"
+\bibitem{DevOps} Gene Kim, Kevin Behr "The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win"
+\bibitem{Jenkins} John Smart "Jenkins: The Definitive Guide"
+
+\end{thebibliography}
+\end{document}

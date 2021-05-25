@@ -1,0 +1,58 @@
+\contentsline {section}{Wst\k ep}{7}%
+\contentsline {section}{\numberline {1}\kernsekcyjny Automatyzacja a branża IT}{9}%
+\contentsline {subsection}{\numberline {1.1}\kernsubsekcyjny Charakteryzacja branży IT}{9}%
+\contentsline {subsection}{\numberline {1.2}\kernsubsekcyjny Agile a automatyzacja}{11}%
+\contentsline {subsection}{\numberline {1.3}\kernsubsekcyjny Git - kamień milowy dla deweloperów}{12}%
+\contentsline {subsection}{\numberline {1.4}\kernsubsekcyjny Ciągła integracja}{14}%
+\contentsline {subsection}{\numberline {1.5}\kernsubsekcyjny Ciągłe dostarczanie}{15}%
+\contentsline {subsection}{\numberline {1.6}\kernsubsekcyjny Ciągła dystrybucja}{16}%
+\contentsline {subsection}{\numberline {1.7}\kernsubsekcyjny GitOps - czym jest?}{18}%
+\contentsline {subsection}{\numberline {1.8}\kernsubsekcyjny Serwery automatyzujące SaaS kontra self-hosted}{20}%
+\contentsline {section}{\numberline {2}\kernsekcyjny Wirtualizacja i orkiestracja}{23}%
+\contentsline {subsection}{\numberline {2.1}\kernsubsekcyjny Wirtualizacja - początki}{23}%
+\contentsline {subsection}{\numberline {2.2}\kernsubsekcyjny Czym są wirtualne maszyny?}{24}%
+\contentsline {subsection}{\numberline {2.3}\kernsubsekcyjny Chmura publiczna}{25}%
+\contentsline {subsection}{\numberline {2.4}\kernsubsekcyjny Kontynery}{26}%
+\contentsline {subsection}{\numberline {2.5}\kernsubsekcyjny Chroot}{26}%
+\contentsline {subsection}{\numberline {2.6}\kernsubsekcyjny Namespaces}{27}%
+\contentsline {subsection}{\numberline {2.7}\kernsubsekcyjny cgroups}{27}%
+\contentsline {subsection}{\numberline {2.8}\kernsubsekcyjny Obraz Dockera}{28}%
+\contentsline {subsection}{\numberline {2.9}\kernsubsekcyjny Obraz Dockera bez Dockera}{29}%
+\contentsline {subsection}{\numberline {2.10}\kernsubsekcyjny Docker Image z Dockerem}{29}%
+\contentsline {subsection}{\numberline {2.11}\kernsubsekcyjny orchestracja}{30}%
+\contentsline {section}{\numberline {3}\kernsekcyjny Hudson oraz Jenkins - klasyczne narzędzia do CI/CD}{31}%
+\contentsline {subsection}{\numberline {3.1}\kernsubsekcyjny Inżynieria oprogramowania}{31}%
+\contentsline {subsection}{\numberline {3.2}\kernsubsekcyjny DevOps}{31}%
+\contentsline {subsection}{\numberline {3.3}\kernsubsekcyjny Projekt}{32}%
+\contentsline {subsection}{\numberline {3.4}\kernsubsekcyjny Jenkins}{32}%
+\contentsline {subsection}{\numberline {3.5}\kernsubsekcyjny Historia}{33}%
+\contentsline {subsection}{\numberline {3.6}\kernsubsekcyjny Architectura}{33}%
+\contentsline {subsection}{\numberline {3.7}\kernsubsekcyjny Master}{35}%
+\contentsline {subsection}{\numberline {3.8}\kernsubsekcyjny Slave}{35}%
+\contentsline {subsection}{\numberline {3.9}\kernsubsekcyjny Aplikacja}{36}%
+\contentsline {subsection}{\numberline {3.10}\kernsubsekcyjny Dockerfile}{38}%
+\contentsline {subsection}{\numberline {3.11}\kernsubsekcyjny Automatyzacja przy użyciu Jenkinsa}{39}%
+\contentsline {subsection}{\numberline {3.12}\kernsubsekcyjny Konfigurowanie Jenkinsa}{40}%
+\contentsline {subsection}{\numberline {3.13}\kernsubsekcyjny Jenkinsfile}{40}%
+\contentsline {subsection}{\numberline {3.14}\kernsubsekcyjny Podsumowanie projektu}{42}%
+\contentsline {section}{\numberline {4}\kernsekcyjny Platformy SaaS z wbudowanym CI/CD}{45}%
+\contentsline {subsection}{\numberline {4.1}\kernsubsekcyjny Z czego wynika popularność platform SaaS?}{45}%
+\contentsline {subsection}{\numberline {4.2}\kernsubsekcyjny Strona statyczna - przykład użycia GitHub Actions i GitHub Pages}{47}%
+\contentsline {section}{\numberline {5}\kernsekcyjny Testy a continuous integration}{57}%
+\contentsline {subsection}{\numberline {5.1}\kernsubsekcyjny Testy jednostkowe}{57}%
+\contentsline {subsubsection}{\numberline {5.1.1}\kernsubsubsekcyjny Wykorzystanie atrap}{58}%
+\contentsline {subsubsection}{\numberline {5.1.2}\kernsubsubsekcyjny Przykładowy test jednostkowy}{59}%
+\contentsline {subsubsection}{\numberline {5.1.3}\kernsubsubsekcyjny Metodyki pisania testów}{60}%
+\contentsline {subsection}{\numberline {5.2}\kernsubsekcyjny Testy integracyjne}{63}%
+\contentsline {subsubsection}{\numberline {5.2.1}\kernsubsubsekcyjny White Box Testing}{63}%
+\contentsline {subsection}{\numberline {5.3}\kernsubsekcyjny Testy end-to-end}{64}%
+\contentsline {subsubsection}{\numberline {5.3.1}\kernsubsubsekcyjny Black Box Testing}{64}%
+\contentsline {subsection}{\numberline {5.4}\kernsubsekcyjny Udział różnych poziomów testowania}{64}%
+\contentsline {subsection}{\numberline {5.5}\kernsubsekcyjny Rola CI w testach}{65}%
+\contentsline {subsubsection}{\numberline {5.5.1}\kernsubsubsekcyjny Wykrywanie błędów bezpieczeństwa}{69}%
+\contentsline {subsection}{\numberline {5.6}\kernsubsekcyjny Przykład CI w GitHub Actions}{71}%
+\contentsline {subsubsection}{\numberline {5.6.1}\kernsubsubsekcyjny Automatyczne przeprowadzanie testów}{72}%
+\contentsline {subsubsection}{\numberline {5.6.2}\kernsubsubsekcyjny Integracja z serwisem Codecov}{73}%
+\contentsline {subsubsection}{\numberline {5.6.3}\kernsubsubsekcyjny Integracja z kanałem Slack}{75}%
+\contentsline {section}{\numberline {6}\kernsekcyjny Podsumowanie i wnioski}{77}%
+\contentsline {section}{Literatura}{79}%
